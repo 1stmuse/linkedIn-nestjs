@@ -1,0 +1,28 @@
+###
+get http://localhost:3000/api/feed/all
+
+###
+get http://localhost:3000/api/feed?take=2&skip=3
+
+###
+post http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "firstName": "muse",
+    "lastName": "james",
+    "email": "test@gmail.com",
+    "password": "akinnagbe",
+    "role": "user"
+}
+
+###
+put http://localhost:3000/api/feed/4
+Content-Type: application/json
+
+{
+    "body": "the updated body of post id 4"
+}
+
+###
+delete http://localhost:3000/api/feed/4
